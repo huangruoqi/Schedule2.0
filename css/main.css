@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+body {
+    background: #307D99 url('../assets/bg.gif');
+    color: #dfdfdf;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0;
+    margin: 0
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #101010;
+    float: left;
+    /* Set the navbar to fixed position */
+    left: 0;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    height: 3rem;
+}
+
+
+/* Links inside the navbar */
+
+.navbar a {
+    font-size: 2rem ;
+    float: left;
+    display: block;
+    color: #dfdfdf;
+    text-align: center;
+    padding-top: .5rem;
+    width: 20%;
+    height: 3rem;
+    text-decoration: none;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+/* Change background on mouse-over */
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.special a {
+    background: rgb(156, 155, 155);
+    color: rgb(32, 32, 32);
+}
+
+.borderline {
+    width:100%;
+    float: left;
+}
+
+.firstRow {
+    float: left;
+    width: 100%;
+
+}
+
+
+.classes a{
+    text-align: center;
+    color: #ccc;
+    text-decoration: none;
+
+}
+
+
+  
+.category {
+    width: 10%;
+    float: left;
+    margin:0;
+    text-align:center;
+}
+  
+
+  
+.show1 {
+    float: left;
+    width: 21.75%;
+    background: rgba(255,255,255,0.16);
+
+    transition: 1.5s;
+    -webkit-tap-highlight-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.free {
+    float: left;
+    width: 21.75%;
+}
+
+.show1:hover {
+    background: rgba(255,255,255,0.6);
+    color: black;
+}
+
+.space {
+    float:left;
+    width:1%;
+}
+
+.secondRow {
+    float: left;
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.stuff a {
+    text-align: center;
+    color: #ccc;
+    text-decoration: none;
+    
+}
+.show2 {
+    float:left;
+    width: 21.75%;
+}
+
+#stuffButton {
+    text-align: center;
+    background: #111;
+    border: none;
+    color: #ccc;
+
+    position: relative;
+    transition: 1.5s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+  #stuffButton:hover {
+    background: transparent;
+    color:black;
+  }
+  
+  
+  
+
+
+
+
+
