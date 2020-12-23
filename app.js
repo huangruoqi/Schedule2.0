@@ -174,7 +174,7 @@ function get_L_img(w) {
     temp.style.textAlign = "right";
     temp.style.float = "left";
     const img = document.createElement('img');
-    img.src = "../assets/left.png";
+    img.src = "./assets/left.png";
     img.style.width = convertHeight(3.5);
     temp.appendChild(img);
     return temp;
