@@ -1,4 +1,4 @@
-window.addEventListener('resize',element=> {
+window.addEventListener('resize', element => {
     start();
 })
 
@@ -6,7 +6,7 @@ const defaultDay = 1;
 var days = ["MON", "TUE", "WED", "THU", "FRI"];
 const navButtons = document.getElementsByClassName('navButton');
 const array = [0, 1, 2, 3, 4];
-var day = (new Date()).getDay()-1;
+var day = (new Date()).getDay() - 1;
 if (day < 0 || day > 4) {
     day = defaultDay;
 }
@@ -17,14 +17,14 @@ fetch("./assets/days.json")
     .then(res => {
         data = res;
     })
-    .then(res=> {
+    .then(res => {
         start();
     })
 
 
 
 function convertHeight(n) {
-    return window.innerWidth/1600.0*n+"rem";
+    return window.innerWidth / 1600.0 * n + "rem";
 }
 
 function changeNavbar() {
@@ -36,7 +36,7 @@ function changeNavbar() {
         const text = document.createTextNode(days[i]);
         temp.appendChild(text);
         temp.className = "navButton";
-        if (day==i) {
+        if (day == i) {
             const special = document.createElement('div');
             special.appendChild(temp);
             special.className = "special";
@@ -63,8 +63,10 @@ function removeAllChildNodes(parent) {
 }
 
 function changeContent() {
+    const bg = document.body.style;
     changeClasses();
     changeStuff();
+    changeHw();
 }
 
 function changeClasses() {
@@ -75,22 +77,25 @@ function changeClasses() {
     cat[0].style.height = convertHeight(14);
     cat[0].style.color = "rgb(205,205,205)";
     cat[0].style.fontSize = convertHeight(1.15);
+    cat[2].style.height = convertHeight(14);
+    cat[2].style.color = "rgb(205,205,205)";
+    cat[2].style.fontSize = convertHeight(1.15);
     cat[1].style.height = convertHeight(14);
     cat[1].style.color = "rgb(0,0,0)";
     cat[1].style.fontSize = convertHeight(1.15);
     const bor = document.getElementsByClassName('borderline');
-    for (var i = 0;i<bor.length;i++) {
+    for (var i = 0; i < bor.length; i++) {
         bor[i].style.height = convertHeight(0.5);
     }
 
-    for (var i=0;i<4;i++) {
-        if (i!=0) {
+    for (var i = 0; i < 4; i++) {
+        if (i != 0) {
             const freeSpace = document.createElement('a');
             freeSpace.style.height = convertHeight(14);
             freeSpace.className = "space";
             finalClass.appendChild(freeSpace);
         }
-        if (i<classData.length) {
+        if (i < classData.length) {
             const tempClass = document.createElement('a');
             tempClass.style.height = convertHeight(14);
             tempClass.className = "show1";
@@ -130,26 +135,26 @@ function changeStuff() {
     const classData = data[day].classes;
     const finalClass = document.getElementsByClassName('stuff')[0];
     removeAllChildNodes(finalClass);
-    for (var i = 0; i<4;i++) {
-        if (i!=0) {
+    for (var i = 0; i < 4; i++) {
+        if (i != 0) {
             const freeSpace = document.createElement('a');
             freeSpace.style.height = convertHeight(14);
             freeSpace.className = "space";
             finalClass.appendChild(freeSpace);
         }
-        if (i<classData.length){
+        if (i < classData.length) {
             const stuffData = classData[i].stuff;
 
             const tempClass = document.createElement('a');
             tempClass.style.height = convertHeight(14);
             tempClass.className = "show2";
-            for (var j = 0; j<4;j++){
-                tempClass.appendChild(get_L_img(25+(j+1)*3.3));
-                if (j<stuffData.length) {
-                    tempClass.appendChild(getButton(75-(j+1)*3.3, stuffData[j].name,stuffData[j].link));
+            for (var j = 0; j < 4; j++) {
+                tempClass.appendChild(get_L_img(25 + (j + 1) * 3.3));
+                if (j < stuffData.length) {
+                    tempClass.appendChild(getButton(75 - (j + 1) * 3.3, stuffData[j].name, stuffData[j].link));
                 }
                 else {
-                    tempClass.appendChild(getButton(75-(j+1)*3.3));
+                    tempClass.appendChild(getButton(75 - (j + 1) * 3.3));
                 }
             }
             finalClass.appendChild(tempClass);
@@ -168,8 +173,8 @@ function changeStuff() {
 
 function get_L_img(w) {
     const temp = document.createElement('div');
-    temp.style.width = w+"%";
-    
+    temp.style.width = w + "%";
+
     temp.style.height = convertHeight(3.5);
     temp.style.textAlign = "right";
     temp.style.float = "left";
@@ -182,7 +187,7 @@ function get_L_img(w) {
 
 function getButton(w, name, link) {
     const temp = document.createElement('div');
-    temp.style.width = w+"%";
+    temp.style.width = w + "%";
     temp.style.height = convertHeight(3.5);
     temp.style.float = "left";
     temp.style.textAlign = "left";
@@ -190,7 +195,7 @@ function getButton(w, name, link) {
     button.style.width = convertHeight(11);
     button.style.height = convertHeight(0.95);
 
-    if (link!=undefined) {
+    if (link != undefined) {
         button.id = "stuffButton";
         button.href = link;
         button.appendChild(document.createTextNode(name));
@@ -205,6 +210,96 @@ function getButton(w, name, link) {
     return temp;
 }
 
+function changeHw() {
+    const classData = data[6].classes;
+    const finalClass = document.getElementById('checkboxList');
+    removeAllChildNodes(finalClass);
+    for (var i = 0; i < classData.length; i++) {
+        const input = document.createElement('input');
+        input.className = "cb";
+        input.type = "checkbox";
+        input.id = "box" + (i + 1);
+        finalClass.appendChild(input);
+        const label = document.createElement('label');
+        label.setAttribute("for", "box" + (i + 1));
+        label.appendChild(document.createTextNode(classData[i]));
+        label.style.fontSize = convertHeight(1.1)
+
+
+
+        finalClass.appendChild(label);
+    }
+    db.collection('Homework').get().then((snapshot) => {
+        snapshot.docs.forEach(doc => {
+            checkOrUncheck(doc);
+        })
+    })
+
+    const buttons = document.getElementById('checkboxList');
+    buttons.style.height = convertHeight(14);
+    const SandC = document.getElementById('sButtonAndcButton');
+    SandC.style.height = convertHeight(14);
+    const hw = document.getElementsByClassName('checkboxes')[0];
+    hw.style.height = convertHeight(14);
+    const free = document.getElementById('checkboxFree');
+    free.style.height = convertHeight(14);
+    const btns = document.getElementsByClassName("btn");
+    const cirs = document.getElementsByClassName("circle");
+    for (var i = 0;i<2;i++) {
+        btns[i].style.width = convertHeight(4);
+        btns[i].style.height = convertHeight(2);
+        btns[i].style.borderRadius = convertHeight(.6);
+        btns[i].style.borderRadius = convertHeight(.6);
+        btns[i].style.fontSize = convertHeight(1);
+        btns[i].style.paddingBottom = convertHeight(.6);
+        btns[i].style.paddingTop = convertHeight(.6);
+        btns[i].style.fontSize = convertHeight(1.2);
+        btns[i].style.margin = convertHeight(1);
+        cirs[i].style.width = convertHeight(4);
+        cirs[i].style.height = convertHeight(3);
+
+    }
+
+}
+
+function checkOrUncheck(doc) {
+    if (doc.data().isFinished) {
+
+        const cb = document.getElementById(doc.data().id);
+        if (cb) {
+            cb.checked = true;
+            cb.disabled = true;
+        }
+
+    }
+
+}
+
+
+const submit = document.getElementById('submitButton');
+submit.addEventListener('click', element => {
+    const cb = document.getElementsByClassName('cb');
+
+    for (var i = 0; i < cb.length; i++) {
+        const doc = db.collection('Homework').doc(cb[i].id);
+        if (cb[i].checked) {
+            cb[i].disabled = true;
+        }
+        doc.update({
+            'isFinished': cb[i].checked
+        })
+    }
+})
+
+
+const clear = document.getElementById('clearButton');
+clear.addEventListener('click', element => {
+    const cb = document.getElementsByClassName('cb');
+    for (var i = 0; i < cb.length; i++) {
+        cb[i].disabled = false;
+        cb[i].checked = false;
+    }
+})
 
 function start() {
     changeNavbar();

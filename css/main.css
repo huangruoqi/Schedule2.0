@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
 
 body {
-    background: #307D99 url('../assets/bg.gif');
+    background: #307D99 url('../assets/hearthstone.jpg');
+
+    background-size: cover;
     color: #dfdfdf;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     -webkit-touch-callout: none;
@@ -55,7 +57,7 @@ body {
 }
 
 .special a {
-    background: rgb(156, 155, 155);
+    background: rgb(192, 192, 192);
     color: rgb(32, 32, 32);
 }
 
@@ -73,7 +75,7 @@ body {
 
 .classes a{
     text-align: center;
-    color: #ccc;
+    color: #ddd;
     text-decoration: none;
 
 }
@@ -92,7 +94,7 @@ body {
 .show1 {
     float: left;
     width: 21.75%;
-    background: rgba(255,255,255,0.16);
+    background: rgba(0,0,0,0.2);
 
     transition: 1.5s;
     -webkit-tap-highlight-color: transparent;
@@ -145,16 +147,139 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
+
   }
   #stuffButton:hover {
     background: transparent;
     color:black;
   }
   
+  /* checkBoxes */
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2rem;
+    cursor: pointer;
+    padding: 0.2rem;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #aaa;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #aea;
+    border-color: #aea;
+  }
+  
+  .homework {
+      float: left;
+      width: 100%;
+  }
+
+  .checkboxes{
+    float: left;
+    text-decoration: none;
+    width: 21.75%;
+  }
+  #checkboxFree {
+    width:15%;
+    float: left;
+  }
+
+  #checkboxList {
+      float: left;
+      width: 40%;
+  }
+  
+  .btn {
+    background: #222;
+
+    border: none;
+
+    color: #eee;
+
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .btn .circle {
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: .9s;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  .btn:hover {
+    background: transparent;
+  }
+  
+  .btn:hover .circle {
+    height: 3rem;
+    width: 6rem;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
+
+  #sButtonAndcButton {
+    float: left;
+    width: 45%;
+  }
+  #submitButton {
+    float: left;
+  }
+  
+  #clearButton {
+    float: left;
+  }
   
   
 
