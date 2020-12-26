@@ -113,6 +113,7 @@ function changeClasses() {
             t3.appendChild(document.createTextNode(classData[i].time));
             tempClass.appendChild(t3);
             tempClass.href = classData[i].zoomLink;
+            tempClass.target = "_blank";
             const t4 = document.createElement('h3');
             t4.style.fontSize = convertHeight(1);
             t4.appendChild(document.createTextNode(classData[i].password));
@@ -198,6 +199,7 @@ function getButton(w, name, link) {
     if (link != undefined) {
         button.id = "stuffButton";
         button.href = link;
+        button.target = "_blank";
         button.appendChild(document.createTextNode(name));
         button.style.borderRadius = convertHeight(0.4);
         button.style.fontSize = convertHeight(1.8);
