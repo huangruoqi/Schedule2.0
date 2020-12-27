@@ -193,6 +193,7 @@ input[type=checkbox] + label {
     background-color: MediumSeaGreen;
     border-color: MediumSeaGreen;
     color: #fff;
+
   }
   
   input[type=checkbox]:disabled + label:before {
