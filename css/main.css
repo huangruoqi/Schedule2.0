@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
 
 body {
-    background: #307D99 url('../assets/hearthstone.jpg');
-
-    background-size: cover;
+    background: black;
     color: #dfdfdf;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     -webkit-touch-callout: none;
@@ -59,6 +57,13 @@ body {
 .special a {
     background: rgb(192, 192, 192);
     color: rgb(32, 32, 32);
+}
+
+.bg {
+  float: left;
+  height: 100%;
+  background: #307D99 url('../assets/hearthstone.jpg');
+  background-size: cover;
 }
 
 .borderline {
@@ -157,9 +162,7 @@ body {
   /* checkBoxes */
 input[type=checkbox] + label {
     display: block;
-    margin: 0.2rem;
     cursor: pointer;
-    padding: 0.2rem;
   }
   
   input[type=checkbox] {
@@ -230,7 +233,7 @@ input[type=checkbox] + label {
     color: #eee;
 
     position: relative;
-    transition: 1s;
+    transition: .5s;
     -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
@@ -245,7 +248,7 @@ input[type=checkbox] + label {
     top: 0;
     left: 50%;
     overflow: hidden;
-    transition: .9s;
+    transition: 1s;
   }
   
   .noselect {

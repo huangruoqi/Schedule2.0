@@ -85,7 +85,7 @@ function changeClasses() {
     cat[1].style.fontSize = convertHeight(1.15);
     const bor = document.getElementsByClassName('borderline');
     for (var i = 0; i < bor.length; i++) {
-        bor[i].style.height = convertHeight(0.5);
+        bor[i].style.height = convertHeight(1.43);
     }
 
     for (var i = 0; i < 4; i++) {
@@ -220,10 +220,15 @@ function changeHw() {
         const input = document.createElement('input');
         input.className = "cb";
         input.type = "checkbox";
+        input.style.margin = convertHeight(0.2);
+        input.style.padding = convertHeight(0.2);
+
         input.id = "box" + (i + 1);
         finalClass.appendChild(input);
         const label = document.createElement('label');
         label.setAttribute("for", "box" + (i + 1));
+        label.style.margin = convertHeight(0.2);
+        label.style.padding = convertHeight(0.2);
         label.appendChild(document.createTextNode(classData[i]));
         label.style.fontSize = convertHeight(1.1)
 
