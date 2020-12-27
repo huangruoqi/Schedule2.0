@@ -274,7 +274,11 @@ function checkOrUncheck(doc) {
         }
 
     }
+}
 
+function changeExtra() {
+    const snowflakes = document.getElementsByClassName("snowflakes")[0];
+    snowflakes.style.fontSize = convertHeight(2);
 }
 
 
@@ -304,6 +308,7 @@ clear.addEventListener('click', element => {
 })
 
 function start() {
+    changeExtra();
     changeNavbar();
     changeContent();
 }
