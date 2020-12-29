@@ -1,0 +1,48 @@
+.secondRow {
+    float: left;
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.stuff a {
+    text-align: center;
+    color: #ccc;
+    text-decoration: none;
+    
+}
+.show2 {
+    float:left;
+    width: 21.75%;
+}
+
+#stuffButton {
+    text-align: center;
+    background: #111;
+    border: none;
+    color: #ccc;
+
+    position: relative;
+    transition: 1.5s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+  #stuffButton:hover {
+    background: transparent;
+    color:black;
+  }
+
+  .free2 {
+    float: left;
+    width: 21.75%;
+}
+
+
+.space2 {
+    float:left;
+    width:1%;
+}
+  

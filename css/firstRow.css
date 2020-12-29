@@ -1,0 +1,51 @@
+.firstRow {
+    float: left;
+    width: 100%;
+
+}
+
+
+.classes a{
+    text-align: center;
+    color: #ddd;
+    text-decoration: none;
+    float: left;
+}
+
+
+  
+.category {
+    width: 10%;
+    float: left;
+    margin:0;
+    text-align:center;
+}
+  
+
+  
+.show1 {
+    float: left;
+    width: 21.75%;
+    background: rgba(0,0,0,0.2);
+
+    transition: 1.5s;
+    -webkit-tap-highlight-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.show1:hover {
+    background: rgba(255,255,255,0.6);
+    color: black;
+}
+
+.free1 {
+    float: left;
+    width: 21.75%;
+}
+
+
+.space1 {
+    float:left;
+    width:1%;
+}

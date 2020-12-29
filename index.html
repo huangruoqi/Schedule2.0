@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/firstRow.css">
+    <link rel="stylesheet" href="./css/secondRow.css">
+    <link rel="stylesheet" href="./css/thirdRow/asyncClasses.css">    
+    <link rel="stylesheet" href="./css/thirdRow/checkboxes.css">
+    <link rel="stylesheet" href="./css/thirdRow/pdfCombine.css">
+    <link rel="stylesheet" href="./css/thirdRow/fileUpload.css">
+
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-
+    <script src="https://unpkg.com/pdf-lib"></script>
 </head>
 
 
@@ -85,7 +92,7 @@
         <div class="borderline">
             <p> </p>
         </div>
-        <div class="homework">
+        <div class="thirdRow">
             <div class="category">
                 <h1>功</h1>
                 <h1>·</h1>
@@ -107,26 +114,36 @@
                     </div>
                 </div>
             </div>
+            <div class="space3"></div>
+            <div class="asyncClasses"></div>
+            <div class="space3"></div>
+            <div class="pdfCombine">
+                <form class="input" method="post" enctype="multipart/form-data">
+                    <input type="file" name="inputfile" id="inputfile" multiple>
+                    <a id="create">create</a>
+                </form>
+                <div class="allFilesUploaded"></div>
+            </div>
+
+            <div class="space3"></div>
+            <div class="fileUpload">
+
+            </div>
+            <div class="space3"></div>
         </div>
     </div>
     <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBp2KKZwRWbXpeqXMXgOKhpeMzWmSfKv7A",
-            authDomain: "schedule-1aa61.firebaseapp.com",
-            databaseURL: "https://schedule-1aa61.firebaseio.com",
-            projectId: "schedule-1aa61",
-            storageBucket: "schedule-1aa61.appspot.com",
-            messagingSenderId: "627663326398",
-            appId: "1:627663326398:web:f918846c5aed74c50562ef",
-            measurementId: "G-6DD53KKLHR"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
+
     </script>
 
-    <script src="app.js"></script>
+    <script src="./scripts/setup.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/firstRow.js"></script>
+    <script src="./scripts/secondRow.js"></script>
+    <script src="./scripts/thirdRow/asyncClasses.js"></script>
+    <script src="./scripts/thirdRow/checkboxes.js"></script>
+    <script src="./scripts/thirdRow/pdfCombine.js"></script>
+    <script src="./scripts/thirdRow/fileUpload.js"></script>
 </body>
 
 </html>
