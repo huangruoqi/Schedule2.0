@@ -1,4 +1,4 @@
-var firebaseConfig = {
+let firebaseConfig = {
     apiKey: "AIzaSyBp2KKZwRWbXpeqXMXgOKhpeMzWmSfKv7A",
     authDomain: "schedule-1aa61.firebaseapp.com",
     databaseURL: "https://schedule-1aa61.firebaseio.com",

@@ -1,7 +1,7 @@
 .firstRow {
     float: left;
     width: 100%;
-
+    z-index: 1;
 }
 
 
@@ -10,6 +10,7 @@
     color: #ddd;
     text-decoration: none;
     float: left;
+
 }
 
 
@@ -37,6 +38,7 @@
 .show1:hover {
     background: rgba(255,255,255,0.6);
     color: black;
+    z-index: 1;
 }
 
 .free1 {

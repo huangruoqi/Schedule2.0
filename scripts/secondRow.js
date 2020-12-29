@@ -2,7 +2,7 @@ function changeStuff() {
     const classData = data[day].classes;
     const finalClass = document.getElementsByClassName('stuff')[0];
     removeAllChildNodes(finalClass);
-    for (var i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
         if (i != 0) {
             const freeSpace = document.createElement('a');
             freeSpace.style.height = convertHeight(14);
@@ -15,7 +15,7 @@ function changeStuff() {
             const tempClass = document.createElement('a');
             tempClass.style.height = convertHeight(14);
             tempClass.className = "show2";
-            for (var j = 0; j < 4; j++) {
+            for (let j = 0; j < 4; j++) {
                 tempClass.appendChild(get_L_img(25 + (j + 1) * 3.3));
                 if (j < stuffData.length) {
                     tempClass.appendChild(getButton(75 - (j + 1) * 3.3, stuffData[j].name, stuffData[j].link));
@@ -34,7 +34,7 @@ function changeStuff() {
     }
 
     const frees = document.getElementsByClassName('free2');
-    for (var i = 0;i<frees.length;i++) {
+    for (let i = 0;i<frees.length;i++) {
         frees[i].style.height = convertHeight(14);
     }
 }

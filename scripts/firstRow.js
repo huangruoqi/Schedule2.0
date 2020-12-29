@@ -13,11 +13,11 @@ function changeClasses() {
     cat[1].style.color = "rgb(0,0,0)";
     cat[1].style.fontSize = convertHeight(1.15);
     const bor = document.getElementsByClassName('borderline');
-    for (var i = 0; i < bor.length; i++) {
+    for (let i = 0; i < bor.length; i++) {
         bor[i].style.height = convertHeight(1.43);
     }
 
-    for (var i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
         if (i != 0) {
             const freeSpace = document.createElement('a');
             freeSpace.className = "space1";
@@ -55,11 +55,11 @@ function changeClasses() {
     }
 
     const frees = document.getElementsByClassName('free1');
-    for (var i = 0;i<frees.length;i++) {
+    for (let i = 0;i<frees.length;i++) {
         frees[i].style.height = convertHeight(14);
     }
     const spaces = document.getElementsByClassName('space1');
-    for (var i = 0;i<spaces.length;i++) {
+    for (let i = 0;i<spaces.length;i++) {
         spaces[i].style.height = convertHeight(14);
     }
 }

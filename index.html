@@ -16,7 +16,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-    <script src="https://unpkg.com/pdf-lib"></script>
+    <script src="https://unpkg.com/pdf-lib@1.14.0/dist/pdf-lib.min.js"></script>
 </head>
 
 
@@ -118,11 +118,7 @@
             <div class="asyncClasses"></div>
             <div class="space3"></div>
             <div class="pdfCombine">
-                <form class="input" method="post" enctype="multipart/form-data">
-                    <input type="file" name="inputfile" id="inputfile" multiple>
-                    <a id="create">create</a>
-                </form>
-                <div class="allFilesUploaded"></div>
+                
             </div>
 
             <div class="space3"></div>
@@ -132,9 +128,6 @@
             <div class="space3"></div>
         </div>
     </div>
-    <script>
-
-    </script>
 
     <script src="./scripts/setup.js"></script>
     <script src="./scripts/main.js"></script>

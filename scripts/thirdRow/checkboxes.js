@@ -2,7 +2,7 @@ function changeCheckbox() {
     const classData = data[6].classes;
     const finalClass = document.getElementById('checkboxList');
     removeAllChildNodes(finalClass);
-    for (var i = 0; i < classData.length; i++) {
+    for (let i = 0; i < classData.length; i++) {
         const input = document.createElement('input');
         input.className = "cb";
         input.type = "checkbox";
@@ -30,7 +30,7 @@ function changeCheckbox() {
     free.style.height = convertHeight(14);
     const btns = document.getElementsByClassName("btn");
     const cirs = document.getElementsByClassName("circle");
-    for (var i = 0; i < 2; i++) {
+    for (let i = 0; i < 2; i++) {
         btns[i].style.width = convertHeight(4);
         btns[i].style.height = convertHeight(2);
         btns[i].style.borderRadius = convertHeight(.6);
@@ -46,9 +46,12 @@ function changeCheckbox() {
     }
 
     const spaces = document.getElementsByClassName('space3');
-    for (var i = 0;i<spaces.length;i++) {
+    for (let i = 0;i<spaces.length;i++) {
         spaces[i].style.height = convertHeight(14);
     }
+
+    const thirdRow = document.getElementsByClassName('thirdRow')[0];
+    thirdRow.style.height = convertHeight(14);
 }
 
 db.collection('Homework').get().then((snapshot) => {
@@ -72,7 +75,7 @@ const submit = document.getElementById('submitButton');
 submit.addEventListener('click', element => {
     const cb = document.getElementsByClassName('cb');
 
-    for (var i = 0; i < cb.length; i++) {
+    for (let i = 0; i < cb.length; i++) {
         const doc = db.collection('Homework').doc(cb[i].id);
         if (cb[i].checked) {
             cb[i].disabled = true;
@@ -87,7 +90,7 @@ submit.addEventListener('click', element => {
 const clear = document.getElementById('clearButton');
 clear.addEventListener('click', element => {
     const cb = document.getElementsByClassName('cb');
-    for (var i = 0; i < cb.length; i++) {
+    for (let i = 0; i < cb.length; i++) {
         cb[i].disabled = false;
         cb[i].checked = false;
     }

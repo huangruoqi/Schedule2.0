@@ -10,7 +10,7 @@ function start() {
     changeContent();
 }
 
-var ratio;
+let ratio;
 function convert() {
     ratio = window.innerWidth / 1600.0;
 }
@@ -20,10 +20,10 @@ function convertHeight(n) {
 }
 
 const defaultDay = 1;
-var days = ["MON", "TUE", "WED", "THU", "FRI"];
+let days = ["MON", "TUE", "WED", "THU", "FRI"];
 const navButtons = document.getElementsByClassName('navButton');
 const array = [0, 1, 2, 3, 4];
-var day = (new Date()).getDay() - 1;
+let day = (new Date()).getDay() - 1;
 if (day < 0 || day > 4) {
     day = defaultDay;
 }
@@ -42,8 +42,8 @@ function changeNavbar() {
     const nav = document.getElementsByClassName("navbar")[0];
     removeAllChildNodes(nav);
 
-    for (var i = 0; i < days.length; i++) {
-        var temp = document.createElement('a');
+    for (let i = 0; i < days.length; i++) {
+        let temp = document.createElement('a');
         const text = document.createTextNode(days[i]);
         temp.appendChild(text);
         temp.className = "navButton";
@@ -76,7 +76,7 @@ function removeAllChildNodes(parent) {
 function changeExtra() {
 
     const spaces = document.getElementsByClassName('space') 
-    for (var i = 0;i<spaces.length;i++) {
+    for (let i = 0;i<spaces.length;i++) {
         spaces[i].style.height = convertHeight(14);
     }
     const snowflakes = document.getElementsByClassName("snowflakes")[0];
