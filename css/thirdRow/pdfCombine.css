@@ -1,7 +1,8 @@
 .pdfCombine { 
     float: left;
     width: 21.75%;
-
+    background:rgba(89, 113, 148,0.5);
+    border-radius: 2rem;
 }
 
 .space3 {
@@ -14,7 +15,7 @@
     width:100%;
     /* background: rgba(255,255,255,0.2); */
     border-radius: 1rem;
-    height: 12%;
+    height: 14%;
     padding-top: .02rem;
 }
 
@@ -43,7 +44,7 @@
 
 #create:hover {
     cursor: pointer;
-    transform: scale(2.5);
+    transform: scale(1.8);
 }
 
 #inputfile {
@@ -54,7 +55,7 @@
 
 #inputfile:hover {
     cursor: pointer;
-    transform: scale(2.5);
+    transform: scale(1.8);
 }
 
 .fileList {
@@ -87,7 +88,7 @@
     width:100%;
     /* background: rgba(255,255,255,0.2); */
     border-radius: 1rem;
-    height: 12%;
+    height: 14%;
     padding-top: .02rem;
 }
 
@@ -117,7 +118,7 @@
 
 #clear:hover {
     cursor: pointer;
-    transform: scale(2.5);
+    transform: scale(1.8);
 }
 
 #back {
@@ -127,7 +128,7 @@
 
 #back:hover {
     cursor: pointer;
-    transform: scale(2.5);
+    transform: scale(1.8);
     
 }
 
