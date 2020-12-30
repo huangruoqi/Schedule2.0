@@ -23,7 +23,9 @@ class PdfFile {
 }
 
 let pdfFiles = [];
+let selected = [];
 let order = [];
+
 const inputFile = document.getElementById("inputfile");
 
 
@@ -34,15 +36,24 @@ const inputFile = document.getElementById("inputfile");
 
 
 async function createPDF() {
+    if (selected.length != 0) {
+        for (file of selected) {
+            order.push(file);
+        }
+        clearFiles();
+        clearSelect();
+    }
     const finalPdf = await PDFLib.PDFDocument.create();
+    let pages;
     for (let i = 0; i < order.length; i++) {
-        const p = pdfFiles[order[i]].pdf;
-        const pages = await finalPdf.copyPages(p, p.getPageIndices());
+        const p = order[i].pdf;
+        pages = await finalPdf.copyPages(p, p.getPageIndices());
         for (const page of pages) {
             await finalPdf.addPage(page);
         }
     }
     const pdfDataUri = await finalPdf.saveAsBase64({ dataUri: true });
+    clearOrder();
     return pdfDataUri;
 }
 
@@ -67,14 +78,22 @@ function changePDFCombine() {
 
 
     input.addEventListener("change", async element => {
-        files = input.files;
-
-        for (const file of files) {
-            pdfFiles.push(new PdfFile(file))
+        clearFiles();
+        if (selected.length != 0) {
+            for (file of selected) {
+                order.push(file);
+            }
+            clearSelect();
+        }
+        for (let i = 0; i < input.files.length; i++) {
+            if (i == 9) {
+                break;
+            }
+            pdfFiles.push(new PdfFile(input.files[i]))
             await pdfFiles[pdfFiles.length - 1].setPdf();
-            changePDFCombine();
         }
 
+        changePDFCombine();
     })
 
     input.multiple = true;
@@ -109,16 +128,13 @@ function changePDFCombine() {
             then(res => res.blob()).
             then(blob => {
                 downloadFile(blob, "combinedPDF.pdf")
-            }).
-            then(element => {
-                clearFiles();
-                console.log(order);
             })
     })
     container1.appendChild(create);
     form.appendChild(container1);
     ac.appendChild(form);
     const fileList = document.createElement('div');
+    fileList.style.fontSize = convertHeight(1.1);
     fileList.className = "fileList";
 
     for (let i = 0; i < pdfFiles.length; i++) {
@@ -126,15 +142,15 @@ function changePDFCombine() {
         temp.id = "file" + i;
         temp.className = "file-container"
         temp.addEventListener("click", element => {
-            if (order.indexOf(i) == -1) {
-                order.push(i);
-            }
+            selected.push(pdfFiles[i]);
+            pdfFiles.splice(i, 1);
+            changePDFCombine();
         })
         const inside = document.createElement('a');
 
         let s = pdfFiles[i].file.name;
         s = s.substring(0, s.length - 4);
-        if (s.length > 15) {
+        if (s.length > 14) {
             s = s.substring(0, 12) + "...";
         }
         inside.appendChild(document.createTextNode(s)); // remove ".pdf"
@@ -143,6 +159,40 @@ function changePDFCombine() {
         fileList.appendChild(temp);
     }
     ac.appendChild(fileList)
+
+    const total = document.createElement('div');
+    const container6 = document.createElement('div');
+    total.className = "total";
+    total.style.fontSize = convertHeight(1.3);
+    const a = document.createElement('a');
+    a.style.paddingTop = convertHeight(2)
+    a.appendChild(document.createTextNode("Total: "+ (order.length + selected.length)));
+    container6.style.width = "100%";
+    container6.style.height = "70%";
+    container6.style.float = "left";
+
+    a.style.float = "left"
+    container6.appendChild(a);
+
+    total.appendChild(container6);
+    
+
+    const container5 = document.createElement('div');
+    const reset = document.createElement('a');
+    container5.id = "reset-container";
+    reset.id = "reset";
+    reset.style.float = "left";
+    reset.appendChild(document.createTextNode("Reset"));
+    reset.addEventListener("click", element => {
+        clearSelect();
+        clearOrder();
+        changePDFCombine()
+    })
+    container5.appendChild(reset);
+    total.appendChild(container5);
+
+    ac.appendChild(total);
+
 
     const edit = document.createElement('div');
     edit.className = "edit";
@@ -157,7 +207,14 @@ function changePDFCombine() {
     clear.style.float = "left";
     clear.appendChild(document.createTextNode("Clear"));
     clear.addEventListener("click", element => {
-        clearFiles();
+        clearFiles()
+        if (selected.length != 0) {
+            for (file of selected) {
+                order.push(file);
+            }
+            clearSelect();
+        }
+        changePDFCombine()
     })
     container4.appendChild(clear);
     edit.appendChild(container4);
@@ -169,17 +226,22 @@ function changePDFCombine() {
     back.id = "back";
     back.style.float = "left";
     back.style.display = "block";
-    back.appendChild(document.createTextNode("Backspace"));
+    back.appendChild(document.createTextNode("Undo"));
     back.addEventListener('click', element => {
-        popFile()
+        undoSelect()
+        changePDFCombine()
     })
 
     container3.appendChild(back);
     edit.appendChild(container3);
 
 
-    
+
     ac.appendChild(edit);
+
+
+
+
 
 
 }
@@ -201,15 +263,17 @@ function downloadFile(blob, fileName) {
 
 function clearFiles() {
     pdfFiles.splice(0, pdfFiles.length);
-    order.splice(0, pdfFiles.length);
-    changePDFCombine()
 }
 
-function popFile() {
-    if (order.length > 0) {
-        order.pop();
-    } else if(pdfFiles.length) {
-        pdfFiles.pop();
+function clearSelect() {
+    selected.splice(0, selected.length);
+}
+function clearOrder() {
+    order.splice(0, order.length);
+}
+
+function undoSelect() {
+    if (selected.length > 0) {
+        pdfFiles.push(selected.pop());
     }
-    changePDFCombine()
 }

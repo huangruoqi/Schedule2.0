@@ -58,7 +58,7 @@
 }
 
 .fileList {
-    width:100%;
+    width:80%;
     height: 70%;
     float: left;
 }
@@ -129,4 +129,25 @@
     cursor: pointer;
     transform: scale(2.5);
     
+}
+
+.total {
+    color: rgb(192, 161, 161);
+
+    float: left;
+    width:20%;
+    height:70%;
+ 
+}
+
+
+#reset {
+
+    transition:1.1s;
+}
+
+#reset:hover {
+    color:red;
+    cursor: pointer;
+
 }
