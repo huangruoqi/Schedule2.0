@@ -81,6 +81,18 @@ body {
 .borderline {
     width:100%;
     float: left;
+    text-align: center;
+}
+
+.thirdRowFree {
+    width: 10%;
+    color: rgba(0,0,0,0);
+    float: left;
+}
+.thirdRowLabel {
+    color:rgb(188, 231, 152);
+    width:22.5%;
+    float: left;
 }
 
 

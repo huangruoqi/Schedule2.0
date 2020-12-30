@@ -81,6 +81,10 @@ function changeExtra() {
     }
     const snowflakes = document.getElementsByClassName("snowflakes")[0];
     snowflakes.style.fontSize = convertHeight(2);
+
+    const borderLabel = document.getElementsByClassName('borderline')[2];
+    borderLabel.style.fontSize = convertHeight(1.4);
+    
 }
 
 function changeContent() {

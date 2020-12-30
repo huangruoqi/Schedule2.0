@@ -48,7 +48,8 @@ function get_L_img(w) {
     temp.style.float = "left";
     const img = document.createElement('img');
     img.src = "./assets/left.png";
-    img.style.width = convertHeight(3.5);
+    img.draggable = false;
+    img.style.width = convertHeight(3.53);
     temp.appendChild(img);
     return temp;
 }

@@ -150,8 +150,8 @@ function changePDFCombine() {
 
         let s = pdfFiles[i].file.name;
         s = s.substring(0, s.length - 4);
-        if (s.length > 14) {
-            s = s.substring(0, 12) + "...";
+        if (s.length > 13) {
+            s = s.substring(0, 10) + "...";
         }
         inside.appendChild(document.createTextNode(s)); // remove ".pdf"
 
