@@ -95,6 +95,7 @@ function changeContent() {
 
 function changeHw() {
     changeCheckbox();
+    changeAsyncClasses();
     changePDFCombine();
     changeFileUpload(); 
 }

@@ -38,9 +38,9 @@
     height: 100%;
 }
 #create {
-
+    color: rgb(192, 161, 161);
     transform: scale(1.3);
-    transition:1.1s;
+    transition:0.7s;
 }
 
 #create:hover {
@@ -49,9 +49,10 @@
 }
 
 #inputfile {
+    color: rgb(192, 161, 161);
     float: left;
     transform: scale(1.3);
-    transition:1.1s;
+    transition:0.7s;
 }
 
 #inputfile:hover {
@@ -74,6 +75,7 @@
     align-items: center; 
     border-radius: 3rem;
     cursor: pointer;
+    transition: 1s;
 }
 
 
@@ -113,8 +115,9 @@
 
 }
 #clear {
+    color: rgb(192, 161, 161);
     transform: scale(1.3);
-    transition:1.1s;
+    transition:0.7s;
 }
 
 #clear:hover {
@@ -123,8 +126,9 @@
 }
 
 #back {
+    color: rgb(192, 161, 161);
     transform: scale(1.3);
-    transition:1.1s;
+    transition:0.7s;
 }
 
 #back:hover {
@@ -145,7 +149,7 @@
 
 #reset {
 
-    transition:1.1s;
+    transition:0.7s;
 }
 
 #reset:hover {

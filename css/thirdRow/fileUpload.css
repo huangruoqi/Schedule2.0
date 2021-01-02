@@ -1,5 +1,111 @@
 .fileUpload {
     float: left;
     width: 21.75%;
+    background:rgba(89, 113, 148,0.5);
+    border-radius: 2rem;
+}
 
+.uploadedFiles {
+    float: left;
+    width: 80%;
+    height:100%;
+}
+.dd-container {
+
+    float:left;
+    width:20%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: rgb(0, 0, 0);
+}
+
+.deleteOrDownloadRed {
+    float:left;
+    width:92%;
+    height:50%;
+
+    border-radius: 1rem;
+    background:rgb(209, 59, 59);
+    transition: 0.8s;
+}
+.deleteOrDownloadGreen {
+    float:left;
+    width:92%;
+    height:50%;
+
+    border-radius: 1rem;
+    background:rgb(102, 219, 102);
+    transition: 0.8s;
+}
+
+.uu-container {
+
+    float:left;
+    width:20%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: rgb(0, 0, 0);
+}
+
+.uu{
+    width:92%;
+    height:50%;  
+
+    border-radius: 1rem;
+    background:rgb(236, 152, 95);
+    transition: 0.8s;
+}
+
+.uu:hover {
+    cursor: pointer;
+    background: rgba(236, 152, 95,0.7);
+}
+
+.HoverClassRed:hover {
+    background:rgba(209, 59, 59, 0.7);
+    cursor: pointer;
+}
+
+.HoverClassGreen:hover {
+    background:rgba(102, 219, 102, 0.7);
+    cursor: pointer;
+}
+
+.dd-text {
+text-align: center;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.uu-text {
+    text-align: center;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+
+
+
+.upload-container {
+    width:33.33%;
+    height: 25%;
+    border-radius: 3rem;
+    float: left;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+
+#uploadInput {
+    display: none;
 }
