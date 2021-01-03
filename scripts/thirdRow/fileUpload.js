@@ -43,7 +43,7 @@ function changeFileUpload() {
         UU.className = "uu";
         const upload = document.getElementById("uploadInput");
         upload.addEventListener('change', element => {
-            uploadFiles(upload.files).then(element => {
+            uploadFiles(upload.files).then(e => {
                 changeFileUpload();
             });
         })
@@ -131,9 +131,13 @@ function deleteOrDownloadFile(file) {
 }
 
 async function uploadFiles(files) {
-    for (var i = 0; i < files.length; i++) {
-        const a = await storageRef.child("files/" + files[i].name).put(files[i])
-            console.log(`${a.metadata.name} uploaded.`);
+    for (let i = 0; i < files.length; i++) {
+        await storageRef.child("files/" + files[i].name).put(files[i]).on('state_changed', function (snapshot) {
+            // Observe state change events such as progress, pause, and resume
+            // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+            const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+            console.log(`File #${i} is ${Math.floor(progress)}% done`);
+        })
     }
 }
 
@@ -151,9 +155,9 @@ function openFromUrl(url) {
 };
 
 function deleteFile(name) {
-    for (let i = 0;i<uploadFilesList.length;i++) {
-        if (name.localeCompare(uploadFilesList[i].name==0)) {
-            uploadFilesList.splice(i,1);
+    for (let i = 0; i < uploadFilesList.length; i++) {
+        if (name.localeCompare(uploadFilesList[i].name) == 0){
+            uploadFilesList.splice(i, 1);
             break;
         }
     }
@@ -164,7 +168,7 @@ function deleteFile(name) {
     const uploadContainers = document.getElementsByClassName("upload-container");
     for (let i = 0; i < uploadContainers.length; i++) {
         uploadContainers[i].classList.remove("HoverClassRed", "HoverClassGreen");
-        if (isDeleting){
+        if (isDeleting) {
             uploadContainers[i].classList.add('HoverClassRed')
         } else {
             uploadContainers[i].classList.add('HoverClassGreen');
