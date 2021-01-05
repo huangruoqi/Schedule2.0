@@ -156,15 +156,6 @@ function deleteOrDownloadFile(file) {
     }
 }
 
-async function uploadFiles(files) {
-    for (let i = 0; i < files.length; i++) {
-        await storageRef.child("files/" + files[i].name).put(files[i])
-        // .on('state_changed', function (snapshot) {
-        //     const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        //     console.log(`File #${i} is ${Math.floor(progress)}% done`);
-        // })
-    }
-}
 
 function openFromUrl(url) {
     const link = document.createElement('a');
