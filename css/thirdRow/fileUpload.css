@@ -20,13 +20,15 @@
     align-items: center; 
     color: rgb(0, 0, 0);
 }
-
+.dd {
+    border-radius: 1rem;
+}
 .deleteOrDownloadRed {
     float:left;
     width:92%;
     height:50%;
 
-    border-radius: 1rem;
+
     background:rgb(209, 59, 59);
     transition: 0.8s;
 }
