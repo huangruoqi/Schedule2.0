@@ -20,11 +20,10 @@ u.addEventListener('click', element => {
 })
 
 
-
+getUploadedFiles()
 function changeFileUpload() {
     const ac = document.getElementsByClassName('fileUpload')[0];
     ac.style.height = convertHeight(14);
-    getUploadedFiles()
     setDownloadOrDelete();
     setUpload();
 
@@ -109,6 +108,10 @@ function setDownloadOrDelete() {
 }
 
 function setUpload() {
+    const fileList = document.getElementsByClassName("uploadedFiles")[0];
+    fileList.style.fontSize = convertHeight(1);
+
+
     const u = document.getElementsByClassName("uu")[0];
     const text = document.getElementsByClassName('uu-text')[0];
     removeAllChildNodes(text)
@@ -130,8 +133,9 @@ async function getUploadedFiles() {
     const a = await storageRef.child("files").list();
     for (let i = 0; i < a.items.length; i++) {
         const path = a.items[i].location.path_;
-        uploadedFileList.push(new URLAndName(await storageRef.child(path).getDownloadURL(), path.substring(6)));
-        setupFileList();
+        const b = new URLAndName(await storageRef.child(path).getDownloadURL(), path.substring(6))
+        uploadedFileList.push(b);
+        AddSingleFileToList(b);
     }
 }
 
