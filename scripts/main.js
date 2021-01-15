@@ -1,7 +1,18 @@
 
-window.addEventListener('resize', element => {
-    start();
+window.addEventListener('load', element => {
+    fetch("./assets/days.json")
+    .then(res => res.json())
+    .then(res => {
+        data = res;
+    })
+    .then(res => {
+        start();
+        window.addEventListener('resize', element => {
+            start();
+        })
+    })
 })
+
 
 function start() {
     convert();
@@ -29,14 +40,7 @@ if (day < 0 || day > 4) {
 }
 
 let data;
-fetch("./assets/days.json")
-    .then(res => res.json())
-    .then(res => {
-        data = res;
-    })
-    .then(res => {
-        start();
-    })
+
 
 function changeNavbar() {
     const nav = document.getElementsByClassName("navbar")[0];
