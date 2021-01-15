@@ -124,12 +124,35 @@
             {
                 "name": "CHM",
                 "number":"3010",
-                "stuff":[]
+                "stuff":[
+                	{
+                        "name": "Content",
+                        "link": "#"
+                    },
+                    {
+                        "name": "Map",
+                        "link": "#"
+                    },
+                    {
+                        "name": "Map",
+                        "link": "#"
+                    }
+                    
+                ]
             },
             {
                 "name": "HST",
                 "number":"2202",
-                "stuff":[]
+                "stuff":[
+                	{
+                        "name": "Content",
+                        "link": "#"
+                    },
+                    {
+                        "name": "Map",
+                        "link": "#"
+                    }
+                ]
             }
         ]
     },

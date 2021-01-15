@@ -3,3 +3,75 @@
 
     float: left;
 }
+
+.async1 {
+    float:left;
+    width:30%;
+    height:100%;
+}
+
+.asyncClassButton {
+    float: left;
+    width: 100%;
+    text-align:center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.show3 {
+    float: left;
+    background: rgba(0,0,0,0.8);
+
+    transition: 1.5s;
+    -webkit-tap-highlight-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.show3:hover {
+    background: rgba(255,255,255,0.6);
+    color: black;
+    z-index: 1;
+}
+
+.async2 {
+    float:left;
+    width:30%;
+    height:100%;
+}
+.async3 {
+    float:left;
+    width:40%;
+    height:100%;
+}
+.asyncStuffButton {
+
+    float: left;
+    width: 100%;
+    text-align:center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.show4 {
+    width: 100%;
+    text-align: center;
+    background: #111;
+    border: none;
+    color: #ccc;
+    text-decoration: none;
+    float: left;
+    transition: 1.5s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+.show4:hover {
+    background: transparent;
+    color:black;
+  }
