@@ -40,6 +40,12 @@
     width:30%;
     height:100%;
 }
+
+#lines {
+    width:100%;
+    height:100%;
+}
+
 .async3 {
     float:left;
     width:40%;

@@ -41,9 +41,51 @@ function getAsyncClassButton(name, height, index) {
 }
 
 function changeAsync2() {
-    const final = document.getElementsByClassName('async2')[0];
+    const canvas = document.getElementById('lines');    
+    const c = canvas.getContext('2d');
+    const numOfAsync = data[5].classes.length;
+    const numOfStuff = data[5].classes[currentAsyncClass].stuff.length;
+    const h = 150;
+    let interval = h/numOfAsync/2;
+    let startY = interval*(2*currentAsyncClass+1);
+    let endY;
+    c.clearRect(0, 0, canvas.width, canvas.height);
 
 
+    c.beginPath();
+    c.moveTo(1,startY);
+    c.lineTo(100,startY);
+    c.lineWidth = 3;
+    c.stroke();
+    c.closePath();
+    
+    c.beginPath();
+    interval = h/numOfStuff/2;
+    endY = h-interval;
+    if (endY<interval) {
+        endY = interval;
+    }
+    if (startY>interval) {
+        startY = interval;
+    }
+    
+    c.moveTo(100, startY-1.5);
+    c.lineTo(100, endY+1.5);
+    c.lineWidth = 14;
+    c.stroke();
+    c.closePath();
+
+    c.beginPath();
+    c.lineWidth = 3;
+    for (let i = 0;i<numOfStuff;i++) {
+        c.moveTo(100,startY+i*interval*2);
+        c.lineTo(300,startY+i*interval*2);
+    }
+    
+
+
+    c.stroke();
+    c.closePath();
 }
 function changeAsync3() {
     const currentStuff = data[5].classes[currentAsyncClass].stuff;
