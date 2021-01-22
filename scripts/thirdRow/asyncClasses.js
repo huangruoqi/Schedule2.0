@@ -111,6 +111,7 @@ function getAsyncStuffButton(stuff, height) {
     button.style.borderRadius = convertHeight(0.5);
     button.style.fontSize = convertHeight(1.5);
     button.href = stuff.link;
+    button.target = "_blank";
     temp.appendChild(button);
     return temp;
 }
