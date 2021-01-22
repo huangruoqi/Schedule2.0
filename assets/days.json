@@ -52,18 +52,11 @@
                 "stuff":[
                     {
                         "name": "Content",
-                        "link": "#"
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_7255374_1&mode=reset"
                     },
                     {
-                        "name": "Map",
-                        "link": "#"
-                    },                    {
-                        "name": "Content",
-                        "link": "#"
-                    },
-                    {
-                        "name": "Map",
-                        "link": "#"
+                        "name": "Assignment",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_6094836_1&mode=reset"
                     }
                 ]
             }
@@ -104,7 +97,15 @@
                 "time": "15:00~16:50",
                 "zoomLink":"000000000",
                 "password": "#",
-                "stuff":[]
+                "stuff":[
+                {
+                        "name": "Content",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_7255374_1&mode=reset"
+                    },
+                    {
+                        "name": "Assignment",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_6094836_1&mode=reset"
+                    }]
             }
         ]
     },
