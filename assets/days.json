@@ -57,6 +57,10 @@
                     {
                         "name": "Assignment",
                         "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_6094836_1&mode=reset"
+                    },
+                    {
+                        "name": "Syllabus",
+                        "link": "./assets/Syllabus/CS3310.pdf"
                     }
                 ]
             }
@@ -105,7 +109,13 @@
                     {
                         "name": "Assignment",
                         "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_6094836_1&mode=reset"
-                    }]
+                    },
+                    {
+                        "name": "Syllabus",
+                        "link": "./assets/Syllabus/CS3310.pdf"
+                    }
+
+                ]
             }
         ]
     },
