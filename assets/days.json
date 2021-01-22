@@ -162,6 +162,10 @@
                     {
                         "name": "Assignment",
                         "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198261_1&content_id=_6095382_1&mode=reset"
+                    },
+                    {
+                        "name": "Syllabus",
+                        "link": "./assets/Syllabus/HST2202.pdf"
                     }
                 ]
             }
