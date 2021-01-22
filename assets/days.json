@@ -60,7 +60,7 @@
                     },
                     {
                         "name": "Syllabus",
-                        "link": "./assets/Syllabus/CS3310.pdf"
+                        "link": "../assets/Syllabus/CS3310.pdf"
                     }
                 ]
             }
@@ -112,7 +112,7 @@
                     },
                     {
                         "name": "Syllabus",
-                        "link": "./assets/Syllabus/CS3310.pdf"
+                        "link": "../assets/Syllabus/CS3310.pdf"
                     }
 
                 ]
@@ -165,7 +165,7 @@
                     },
                     {
                         "name": "Syllabus",
-                        "link": "./assets/Syllabus/HST2202.pdf"
+                        "link": "../assets/Syllabus/HST2202.pdf"
                     }
                 ]
             }
