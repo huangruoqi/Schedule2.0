@@ -17,12 +17,12 @@
                 "password": "#",
                 "stuff":[
                     {
-                        "name": "Content",
-                        "link": "#"
+                        "name": "Lectures",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_7426714_1&mode=reset"
                     },
                     {
-                        "name": "Map",
-                        "link": "#"
+                        "name": "Syllabus",
+                        "link": "./assets/Syllabus/ENG2105.pdf"
                     }
                 ]
             },
@@ -85,7 +85,16 @@
                 "time": "10:00~11:15",
                 "zoomLink":"000000000",
                 "password": "#",
-                "stuff":[]
+                "stuff":[
+                    {
+                        "name": "Lectures",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_7426714_1&mode=reset"
+                    },
+                    {
+                        "name": "Syllabus",
+                        "link": "./assets/Syllabus/ENG2105.pdf"
+                    }
+                ]
             },
             {
                 "name": "CS",
