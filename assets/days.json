@@ -30,16 +30,20 @@
                 "name": "CS",
                 "number":"3110",
                 "time": "13:00~14:15",
-                "zoomLink":"000000000",
-                "password": "#",
+                "zoomLink":"https://cpp.zoom.us/j/87216358413",
+                "password": "None",
                 "stuff":[
                     {
-                        "name": "Content",
-                        "link": "#"
+                        "name": "Lecture Notes",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6236696_1&mode=reset"
                     },
                     {
-                        "name": "Map",
-                        "link": "#"
+                        "name": "In-Class Exercise",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_7249325_1"
+                    },
+                    {
+                        "name": "Homework",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_7249326_1"
                     }
                 ]
             },
@@ -100,8 +104,8 @@
                 "name": "CS",
                 "number":"3110",
                 "time": "13:00~14:15",
-                "zoomLink":"000000000",
-                "password": "#",
+                "zoomLink":"https://cpp.zoom.us/j/87216358413",
+                "password": "None",
                 "stuff":[]
             },
             {
