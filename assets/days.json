@@ -10,12 +10,12 @@
                 "name": "ENG",
                 "number": "2105",
                 "time": "10:00~11:15",
-                "zoomLink": "000000000",
-                "password": "#",
+                "zoomLink": "#",
+                "password": "",
                 "stuff": [
                     {
-                        "name": "Lectures",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_7426714_1&mode=reset"
+                        "name": "Assignments",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
                     },
                     {
                         "name": "Syllabus",
@@ -35,12 +35,8 @@
                         "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6236696_1&mode=reset"
                     },
                     {
-                        "name": "In-Class Exercise",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_7249325_1"
-                    },
-                    {
-                        "name": "Homework",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_7249326_1"
+                        "name": "Assignments",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6094786_1&mode=reset"
                     }
                 ]
             },
@@ -49,7 +45,7 @@
                 "number": "3310",
                 "time": "15:00~16:50",
                 "zoomLink": "https://cpp.zoom.us/j/81475826808?pwd=MnFzYkFLZkl4QnhCZ0hQUyt2cDVLdz09",
-                "password": "#",
+                "password": "No need",
                 "stuff": [
                     {
                         "name": "Content",
@@ -78,8 +74,8 @@
                 "name": "ENG",
                 "number": "2105",
                 "time": "10:00~11:15",
-                "zoomLink": "000000000",
-                "password": "#",
+                "zoomLink": "#",
+                "password": "",
                 "stuff": [
                     {
                         "name": "Lectures",
@@ -90,21 +86,29 @@
                         "link": "./assets/Syllabus/ENG2105.pdf"
                     }
                 ]
-            },
-            {
+            },{
                 "name": "CS",
                 "number": "3110",
                 "time": "13:00~14:15",
                 "zoomLink": "https://cpp.zoom.us/j/87216358413",
                 "password": "None",
-                "stuff": []
+                "stuff": [
+                    {
+                        "name": "Lecture Notes",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6236696_1&mode=reset"
+                    },
+                    {
+                        "name": "Assignments",
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6094786_1&mode=reset"
+                    }
+                ]
             },
             {
                 "name": "CS",
                 "number": "3310",
                 "time": "15:00~16:50",
                 "zoomLink": "https://cpp.zoom.us/j/81475826808?pwd=MnFzYkFLZkl4QnhCZ0hQUyt2cDVLdz09",
-                "password": "#",
+                "password": "No need",
                 "stuff": [
                     {
                         "name": "Content",
@@ -135,7 +139,7 @@
                 "stuff": [
                     {
                         "name": "Content",
-                        "link": "#"
+                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_197743_1&content_id=_6189525_1&mode=reset"
                     },
                     {
                         "name": "Syllabus",
@@ -147,10 +151,6 @@
                 "name": "HST",
                 "number": "2202",
                 "stuff": [
-                    {
-                        "name": "Content",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198261_1&content_id=_6247501_1&mode=reset"
-                    },
                     {
                         "name": "Assignment",
                         "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198261_1&content_id=_6095382_1&mode=reset"
@@ -174,8 +174,7 @@
             "CS 3110",
             "CS 3310",
             "CHM3010",
-            "HST2202",
-            "hsdkfjf"
+            "HST2202"
         ]
     }
 ]
