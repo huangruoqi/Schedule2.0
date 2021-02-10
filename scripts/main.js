@@ -30,11 +30,11 @@ function convertHeight(n) {
     return ratio * n + "rem";
 }
 
-const defaultDay = 1;
+const defaultDay = 2;
 let days = ["MON", "TUE", "WED", "THU", "FRI"];
 const navButtons = document.getElementsByClassName('navButton');
 const array = [0, 1, 2, 3, 4];
-let day = (new Date()).getDay() - 1;
+//let day = (new Date()).getDay() - 1;
 if (day < 0 || day > 4) {
     day = defaultDay;
 }
