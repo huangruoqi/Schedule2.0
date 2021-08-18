@@ -1,190 +1,218 @@
 [
-    {
-        "name": "Monday",
-        "classes": []
-    },
-    {
-        "name": "Tuesday",
-        "classes": [
-            {
-                "name": "ENG",
-                "number": "2105",
-                "time": "10:00~11:15",
-                "zoomLink": "#",
-                "password": "",
-                "stuff": [
-                    {
-                        "name": "Assignments",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/ENG2105.pdf"
-                    }
-                ]
-            },
-            {
-                "name": "CS",
-                "number": "3110",
-                "time": "13:00~14:15",
-                "zoomLink": "https://cpp.zoom.us/j/87216358413",
-                "password": "None",
-                "stuff": [
-                    {
-                        "name": "Lecture Notes",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6236696_1&mode=reset"
-                    },
-                    {
-                        "name": "Assignments",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6094786_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/CS3110.pdf"
-                    }
-
-                ]
-            },
-            {
-                "name": "CS",
-                "number": "3310",
-                "time": "15:00~16:50",
-                "zoomLink": "https://cpp.zoom.us/j/81475826808?pwd=MnFzYkFLZkl4QnhCZ0hQUyt2cDVLdz09",
-                "password": "No need",
-                "stuff": [
-                    {
-                        "name": "Content",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_7255374_1&mode=reset"
-                    },
-                    {
-                        "name": "Assignment",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_6094836_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/CS3310.pdf"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Wednesday",
-        "classes": []
-    },
-    {
-        "name": "Thursday",
-        "classes": [
-            {
-                "name": "ENG",
-                "number": "2105",
-                "time": "10:00~11:15",
-                "zoomLink": "#",
-                "password": "",
-                "stuff": [
-                    {
-                        "name": "Assignments",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_7426714_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/ENG2105.pdf"
-                    }
-                ]
-            },{
-                "name": "CS",
-                "number": "3110",
-                "time": "13:00~14:15",
-                "zoomLink": "https://cpp.zoom.us/j/87216358413",
-                "password": "None",
-                "stuff": [
-                    {
-                        "name": "Lecture Notes",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6236696_1&mode=reset"
-                    },
-                    {
-                        "name": "Assignments",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6094786_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/CS3110.pdf"
-                    }
-
-                ]
-            },
-            {
-                "name": "CS",
-                "number": "3310",
-                "time": "15:00~16:50",
-                "zoomLink": "https://cpp.zoom.us/j/81475826808?pwd=MnFzYkFLZkl4QnhCZ0hQUyt2cDVLdz09",
-                "password": "No need",
-                "stuff": [
-                    {
-                        "name": "Content",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_7255374_1&mode=reset"
-                    },
-                    {
-                        "name": "Assignment",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_6094836_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/CS3310.pdf"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Friday",
-        "classes": []
-    },
-    {
-        "name": "Async",
-        "classes": [
-            {
-                "name": "CHM",
-                "number": "3010",
-                "stuff": [
-                    {
-                        "name": "Content",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_197743_1&content_id=_6189525_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/CHM3010.pdf"
-                    }
-                ]
-            },
-            {
-                "name": "HST",
-                "number": "2202",
-                "stuff": [
-                    {
-                        "name": "Assignment",
-                        "link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198261_1&content_id=_6095382_1&mode=reset"
-                    },
-                    {
-                        "name": "Syllabus",
-                        "link": "./assets/Syllabus/HST2202.pdf"
-                    },
-                    {
-                        "name": "eBook",
-                        "link": "https://bookshelf.vitalsource.com/"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "All classes",
-        "classes": [
-            "ENG2105",
-            "CS 3110",
-            "CS 3310",
-            "CHM3010",
-            "HST2202"
-        ]
-    }
+	{
+		"name": "Monday",
+		"classes": [
+			{
+				"name": "PHY",
+				"number": "1520",
+				"time": "11:00~11:50",
+				"zoomLink": "#",
+				"password": "",
+				"stuff": [
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/ENG2105.pdf"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Tuesday",
+		"classes": [
+			{
+				"name": "STA",
+				"number": "2260",
+				"time": "08:30~9:45",
+				"zoomLink": "#",
+				"password": "",
+				"stuff": [
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/ENG2105.pdf"
+					}
+				]
+			},
+			{
+				"name": "CS",
+				"number": "3650",
+				"time": "15:00~16:50",
+				"zoomLink": "#",
+				"password": "",
+				"stuff": [
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/ENG2105.pdf"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Wednesday",
+		"classes": [
+			{
+				"name": "PHY",
+				"number": "1520",
+				"time": "11:00~11:50",
+				"zoomLink": "#",
+				"password": "",
+				"stuff": [
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/ENG2105.pdf"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Thursday",
+		"classes": [
+			{
+				"name": "ENG",
+				"number": "2105",
+				"time": "10:00~11:15",
+				"zoomLink": "#",
+				"password": "",
+				"stuff": [
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_7426714_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/ENG2105.pdf"
+					}
+				]
+			},
+			{
+				"name": "CS",
+				"number": "3110",
+				"time": "13:00~14:15",
+				"zoomLink": "https://cpp.zoom.us/j/87216358413",
+				"password": "None",
+				"stuff": [
+					{
+						"name": "Lecture Notes",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6236696_1&mode=reset"
+					},
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198164_1&content_id=_6094786_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/CS3110.pdf"
+					}
+				]
+			},
+			{
+				"name": "CS",
+				"number": "3310",
+				"time": "15:00~16:50",
+				"zoomLink": "https://cpp.zoom.us/j/81475826808?pwd=MnFzYkFLZkl4QnhCZ0hQUyt2cDVLdz09",
+				"password": "No need",
+				"stuff": [
+					{
+						"name": "Content",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_7255374_1&mode=reset"
+					},
+					{
+						"name": "Assignment",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198174_1&content_id=_6094836_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/CS3310.pdf"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Friday",
+		"classes": [
+			{
+				"name": "PHY",
+				"number": "1520",
+				"time": "11:00~11:50",
+				"zoomLink": "#",
+				"password": "",
+				"stuff": [
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/ENG2105.pdf"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Async",
+		"classes": [
+			{
+				"name": "CHM",
+				"number": "3010",
+				"stuff": [
+					{
+						"name": "Content",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_197743_1&content_id=_6189525_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/CHM3010.pdf"
+					}
+				]
+			},
+			{
+				"name": "HST",
+				"number": "2202",
+				"stuff": [
+					{
+						"name": "Assignment",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198261_1&content_id=_6095382_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/HST2202.pdf"
+					},
+					{
+						"name": "eBook",
+						"link": "https://bookshelf.vitalsource.com/"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "All classes",
+		"classes": [
+			"ENG2105",
+			"CS 3110",
+			"CS 3310",
+			"CHM3010",
+			"HST2202"
+		]
+	}
 ]
