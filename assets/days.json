@@ -6,8 +6,8 @@
 				"name": "PHY",
 				"number": "1520",
 				"time": "11:00~11:50",
-				"zoomLink": "#",
-				"password": "",
+				"zoomLink": "https://cpp.zoom.us/j/85739688869",
+				"password": "049266",
 				"stuff": [
 					{
 						"name": "Assignments",
@@ -28,8 +28,8 @@
 				"name": "STA",
 				"number": "2260",
 				"time": "08:30~9:45",
-				"zoomLink": "#",
-				"password": "",
+				"zoomLink": "https://cpp.zoom.us/j/85880411971",
+				"password": "2260",
 				"stuff": [
 					{
 						"name": "Assignments",
@@ -45,7 +45,7 @@
 				"name": "CS",
 				"number": "3650",
 				"time": "15:00~16:50",
-				"zoomLink": "#",
+				"zoomLink": "https://cpp.zoom.us/j/83943891311?pwd=NTNRSFRGMy94Y2NIbkhDNFdTK2VJdz09",
 				"password": "",
 				"stuff": [
 					{
@@ -63,6 +63,23 @@
 	{
 		"name": "Wednesday",
 		"classes": [
+			{
+				"name": "PHY",
+				"number": "1520L",
+				"time": "09:00~09:50",
+				"zoomLink": "https://cpp.zoom.us/j/89215201315",
+				"password": "",
+				"stuff": [
+					{
+						"name": "Assignments",
+						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_199236_1&content_id=_6101369_1&mode=reset"
+					},
+					{
+						"name": "Syllabus",
+						"link": "./assets/Syllabus/ENG2105.pdf"
+					}
+				]
+			},
 			{
 				"name": "PHY",
 				"number": "1520",
@@ -172,8 +189,8 @@
 		"name": "Async",
 		"classes": [
 			{
-				"name": "CHM",
-				"number": "3010",
+				"name": "CS",
+				"number": "3750",
 				"stuff": [
 					{
 						"name": "Content",
@@ -184,35 +201,17 @@
 						"link": "./assets/Syllabus/CHM3010.pdf"
 					}
 				]
-			},
-			{
-				"name": "HST",
-				"number": "2202",
-				"stuff": [
-					{
-						"name": "Assignment",
-						"link": "https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_198261_1&content_id=_6095382_1&mode=reset"
-					},
-					{
-						"name": "Syllabus",
-						"link": "./assets/Syllabus/HST2202.pdf"
-					},
-					{
-						"name": "eBook",
-						"link": "https://bookshelf.vitalsource.com/"
-					}
-				]
 			}
 		]
 	},
 	{
 		"name": "All classes",
 		"classes": [
-			"ENG2105",
-			"CS 3110",
-			"CS 3310",
-			"CHM3010",
-			"HST2202"
+			"PHY 1520 ",
+			"PHY1520L",
+			"STA 2260",
+			"CS  3650",
+			"CS  3750"
 		]
 	}
 ]
